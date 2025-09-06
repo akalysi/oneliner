@@ -41,11 +41,5 @@ public class Player : MonoBehaviour
             Text1.text = "";
             Text2.text = "";
         }
-
-        if (collision.CompareTag("JACKPOT")) {
-            level++;
-            transform.position = new Vector3(transform.position.x + 22, transform.position.y, transform.position.z);
-            mcam.transform.position = new Vector3(mcam.transform.position.x + 18, mcam.transform.position.y, mcam.transform.position.z);
-        }
     }
 }
